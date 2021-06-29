@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Product Landing Page</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header id="header">a-TO-nime-Y</header>
+	<img id="header-img" src="header-logo.png" alt="LOGO">
+
+	<nav id="nav-bar" class="nav-bar">
+		<a class="nav-link" href="#Home">Home</a>
+		<a class="nav-link" href="#About-Us">About Us</a>
+		<a class="nav-link" href="#Product">Product</a>					
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    	<i class="fa fa-bars"></i>
+	  	</a>			
+	</nav>
+
+	<div id="Home">
+		<div class="icon">
+			<i class="fa fa-3x fa-fire" style="color:red;"></i>
+			<h2>Premium Materials</h2>
+			<p>Our anime figures are fresh & authentic from Japan. Made with high class materials</p> 
+		</div>
+		<div class="icon">
+			<i class="fa fa-3x fa-truck" style="color:red;"></i>
+			<h2>Fast Shipping</h2>
+			<p>We make sure you recieve your order as soon as possible. We also provide 30 days return if you are not satisfied.</p> 
+		</div>
+		<div class="icon">
+			<i class="fa fa-3x fa-battery-full" aria-hidden="true" style="color:red;"></i>
+			<h2>Quality Assurance</h2>
+			<p>For every purchase you make, we ensure there are no damages because we pride ourselves in the quality of our product.</p> 			
+		</div><br><br><br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Oy9cVC_BAA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<p style="font-size:16px; font-weight:bold;"> <span style="font-size:23px;">&copy</span> Jenny Supremo</p>
+	</div>
+	<div id="About-Us">
+		<h2>About Us</h2>
+		<p>We prioritize our customers & pride ourselves on the quality of the products. Our goal as a startup ecommerce is to give an easy, affordable access to authentic anime figure collectibles sold in Japan to every customers around South East Asia. a-TO-nime-Y strives to deliver the best and only the best to our beloved customers. That being said we provide 30 days return guaranteed if the customers are dissatisfied to the product. This ecommerce website was born through the love of watching anime, reading mangas and collecting anime figures. We share the same passion and love just like our customers.</p>
+	</div>
+	<br><br>
+
+	<form id="form" action="https://www.freecodecamp.com/email-submit)">
+		<p>Pre-Ordered products, Customized masterpieces please email us.</p>
+		<input id="email" type="email" name="email" placeholder="Enter valid email" required><br>
+		<input id="submit" type="submit" value="Send">
+	</form><br><br><br>	
+
+	<h2 class="Product-H2">Products</h2>
+	<p class="view-more"><a href="https://shopee.ph/lnkjapan?originalCategoryId=101392&page=0" target="_blank">View More</a></p>
+	<br>
+	<div id="Product">
+		<img src="Images/bleach.jpeg" alt="Ulquiorra">
+		<img src="Images/jujutsukaisen.jpeg" alt="Yuji Itadori">
+		<img src="Images/luffy.jpeg" alt="Monkey D Luffy">
+		<img src="Images/zoro.jpeg" alt="Roronoa Zoro">
+		<img src="Images/tobirama.jpeg" alt="Tobirama Senju">
+		<img src="Images/black-clover.jpeg" alt="Asta">
+		<img src="Images/naruto.jpeg" alt="Naruto Uzumaki">
+		<img src="Images/nezuko.jpeg" alt="Nezuko">
+	</div><br><br><br>	
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("nav-bar")
+			if(x.className == "nav-bar") {
+				x.className += "responsive";
+			} else {
+				x.className = "nav-bar";
+			}
+		}
+	</script>
+
+</body>
+</html>

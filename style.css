@@ -1,0 +1,216 @@
+body {
+	background: rgb(0,0,128);
+	background: linear-gradient(90deg, rgba(0,0,128,0.8) 0%, rgba(0,0,128,0.8) 100%);
+	color: orangered;
+}
+#header {
+	position: absolute;
+	left: 120px;
+	top: 40px;
+	font-size: 35px;
+	text-shadow: 5px 5px 10px #B22222;
+	font-family: Copperplate;	
+}
+#header-img {
+	width: 100px;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 50%;
+}
+/* navbar section */
+.nav-bar {
+	float: right;
+	padding: 10px;
+	padding-top: 40px;
+}
+.nav-bar .icon {
+	visibility: hidden;
+	color: orangered;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 21px;
+}
+.nav-link {
+	text-decoration: none;
+	padding: 13px;
+	font-size: 23px;
+	color: orangered;
+	font-family: Copperplate;	
+}
+.nav-link:hover {
+	border: 1.5px solid orangered;
+	background: navy;
+}
+/* Home section */
+#Home {
+	margin-top: 80px;
+	text-align: center;
+}
+#Home .icon h2 {
+	color: orange;
+	font-family: Copperplate;
+	font-size: 30px;
+}
+#Home .icon p {
+	font-size: 20px;
+}
+/* About us section */
+#About-Us {
+	text-align: center;
+}
+#About-Us h2 {
+	color: orange;
+	font-family: Copperplate;
+	font-size: 30px;
+	margin-top: 140px;
+	text-decoration: underline;
+}
+#About-Us p {
+	padding-left: 200px;
+	padding-right: 200px;
+	font-size: 20px;
+	text-align: justify;
+}
+/* Form / Contact section */
+#form {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+  	align-items: center;
+}
+#form p {
+	font-size: 20px;
+	color: orange;
+}
+#form #email {
+	font-size: 16px;
+	width: 300px;
+}
+#form #submit {
+	padding: 10px;
+	border: 1.5px solid orangered;
+	background: navy;
+	color: orangered;
+	width: 100px;
+	cursor: pointer;
+}
+#form #submit:hover {
+	border: 1.5px solid orange;
+	color: white;	
+}
+/* Product section */
+.Product-H2 {
+	text-align:center; 
+	color: orange; 
+	font-family: Copperplate; 
+	text-decoration: underline; 
+	font-size: 30px;
+}
+#Product {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	flex-direction: row;
+	max-height: 100vh;
+}
+#Product img {
+	width: 310px;
+	height: 330px;
+	margin: 18px;
+	border: 2px solid orangered;
+	border-radius: 5%;
+	box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+	max-width: 23vw;
+	cursor: pointer;
+}
+#Product img:hover {
+	border:	2px solid orange;
+}
+.view-more {
+	text-align: center;
+}
+.view-more a {
+	padding: 10px;
+	text-decoration: none;
+	border: 1.5px solid orangered;
+	background: navy;
+	color: orangered;
+	width: 100px;
+	cursor: pointer;
+}
+.view-more a:hover {
+	border: 1.5px solid orange;
+	color: white;
+}
+/* Media query */
+/* Landscape Tablets */
+@media screen and (max-width: 768px) {
+	#About-Us p {
+		text-align: center;
+		padding: 10px;
+	}
+	#Product img {
+		width: 280px;
+		height: 270px;
+		margin: 25px;
+	}
+	.nav-bar a.nav-link {display: none;}
+	.nav-bar a.icon {
+		visibility: visible;
+		float: right;
+		display: block;
+	} 
+}
+@media screen and (max-width: 768px) {
+	.nav-bar .responsive {position: relative;}
+	.nav-bar .responsive .icon {
+		position: absolute;
+		right: 10px;
+		top: 25px;
+	}
+	.nav-bar .responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.nav-link {
+		font-size: 20px;
+	}
+	.nav-link:hover {
+		color: orange;
+		border: none;
+		background: none;
+	}
+}
+/* Large Phones / Portrait Tablets */
+@media screen and (max-width: 699px) {
+	#Home .icon h2, #About-Us h2, #Product h2, .Product-H2 {
+		font-size: 23px;
+	}
+	#Home .icon p, #About-Us p {
+		font-size: 16.5px;
+	}
+}
+/* Small Phones */
+@media screen and (max-width: 599px) {
+	#Home .icon h2, #About-Us h2, #Product h2, .Product-H2 {
+		font-size: 21px;
+	}
+	#Home .icon p, #About-Us p, #form p {
+		font-size: 15px;
+	}
+	#form #submit, .view-more a {
+		padding: 8px;
+		width: 75px;
+		font-size: 13px;
+		cursor: pointer;		
+	}	
+}
+/* Smallest stretch */
+@media screen and (max-width: 569px) {
+	#Product img {
+		width: 245px;
+		height: 250px;
+		margin: 17px;
+	}
+}
